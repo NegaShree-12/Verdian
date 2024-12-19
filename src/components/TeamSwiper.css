@@ -1,0 +1,75 @@
+.team-swiper-container {
+    width: 0% !important;
+    margin: auto;
+    text-align: center;
+    position: relative;
+  }
+  
+  .team-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .team-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .team-role {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+  }
+  
+  .swiper-button-prev img,
+  .swiper-button-next img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-button-prev {
+    left: 10px;
+  }
+  
+  .swiper-button-next {
+    right: 10px;
+  }
+  
+  .swiper-pagination-bullet {
+    background: #555;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #333;
+  }
+  

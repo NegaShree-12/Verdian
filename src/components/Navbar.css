@@ -1,0 +1,118 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #FFFFFF;
+  color: #51585E;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  border-bottom: 2px solid #CACFDB;
+  justify-content: space-between;
+}
+
+/* Navbar icon (Veridian image) */
+.navbar-icon {
+  margin-left: auto;
+  margin-right: 3rem;
+}
+
+.navbar-icon img {
+  width: 100px; /* Adjust image size */
+  height: auto;
+}
+
+/* Navigation links (hidden by default for mobile) */
+.nav-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  margin: 0 16px;
+  color: #51585E;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #009065;
+}
+
+/* Hamburger menu - hidden for large screens */
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  /* Logo/Icon properly aligned */
+  .navbar-icon {
+    order: -1; /* Ensure it shifts left */
+    margin-left: 1rem;
+    margin-right: 0;
+  }
+
+  .navbar-icon img {
+    width: 80px; /* Slightly reduce image size for smaller screens */
+    height: auto;
+  }
+
+  /* Hamburger menu becomes visible */
+  .hamburger-icon {
+    display: block;
+    position: absolute;
+    right: 20px;
+    z-index: 11;
+  }
+
+  /* Navigation links (hidden initially) */
+  .nav-links {
+    position: fixed;
+    top: 0; /* Ensure links stay up */
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    background-color: #FFFFFF;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1rem; /* Add space for better readability */
+    transform: translateX(-100%); /* Slide out of view by default */
+    transition: transform 0.3s ease-in-out;
+    z-index: 10;
+    overflow-y: auto; /* Scrollable if content exceeds viewport height */
+  }
+
+  /* Links visible when menu is open */
+  .nav-links.open {
+    transform: translateX(0); /* Slide into view */
+  }
+
+  .nav-link {
+    margin: 1rem 0;
+    color: #51585E;
+  }
+
+  .nav-link:hover {
+    text-decoration: underline;
+    color: #009065;
+  }
+
+  /* Prevent content from shifting Veridian image */
+  .navbar-icon.responsive-icon {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 12;
+  }
+}

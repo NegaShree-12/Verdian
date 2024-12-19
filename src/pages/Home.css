@@ -1,0 +1,13 @@
+.home-container {
+    min-height: 100vh;
+    padding: 5rem;
+    box-sizing: border-box; /* Ensure padding is part of the dimensions */
+    overflow: hidden; /* Prevent content from clipping */
+  }
+  
+  @media (max-width: 768px) {
+    .home-container {
+      padding: 0; /* Remove padding for small screens */
+    }
+  }
+  

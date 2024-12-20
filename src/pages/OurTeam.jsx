@@ -131,7 +131,7 @@ const OurTeam = () => {
     position: "absolute",
     top: "50%",
     right: "2%",
-    zIndex: 5``,
+    zIndex: 5,
     backgroundColor: "#11423F",
     color: "#ffffff",
     boxShadow: "0 2px 4px rgba(0,0,0,0.2)",

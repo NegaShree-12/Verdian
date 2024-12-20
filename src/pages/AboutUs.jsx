@@ -84,7 +84,7 @@ const AboutUs = () => {
     gap: "2rem",
     backgroundColor: "#fff",
     padding: "3rem",
-    borderRadius: "12px",
+    borderRadius: "0    px",
     marginBottom: "3rem",
     boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
     position: "relative",
@@ -148,6 +148,7 @@ const AboutUs = () => {
         >
           {/* Cards with Icons on the Right */}
           <AboutUsCard
+          sx={{ borderRadius:"0px"}}
             title="Excellence"
             description="We strive for excellence by continuously honing our skills & expanding our knowledge."
             icon={<Medal />}

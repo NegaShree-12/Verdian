@@ -22,4 +22,3 @@ const AboutUsCard = ({ title, description, icon }) => {
 
 export default AboutUsCard;
 
-

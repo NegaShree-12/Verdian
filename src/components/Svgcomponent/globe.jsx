@@ -1,9 +1,10 @@
-import * as React from "react"
+import * as React from "react";
 const Globe = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={104}
     height={104}
+    viewBox="0 0 104 104"
     fill="none"
     {...props}
   >
@@ -18,5 +19,5 @@ const Globe = (props) => (
       mask="url(#a)"
     />
   </svg>
-)
-export default Globe
+);
+export default Globe;
